@@ -32,7 +32,7 @@ class Weather
         $url = 'https://restapi.amap.com/v3/weather/weatherInfo';
 
         $types = [
-            'live' => 'base',
+            'live'     => 'base',
             'forecast' => 'all',
         ];
 
@@ -40,8 +40,8 @@ class Weather
             throw new InvalidArgumentException('Invalid response format: '.$format);
         }
 
-        if (!\array_key_exists(\strtolower($type), $types)) {
-            throw new InvalidArgumentException('Invalid type value(live/forecast): '.$type);
+        if (!\in_array(\strtolower($type), $types)) {
+            throw new InvalidArgumentException('Invalid type value(base/all): '.$type);
         }
 
         // 2. 封装 query 参数，并对空值进行过滤。
