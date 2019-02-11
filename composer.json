@@ -1,0 +1,28 @@
+{
+    "name": "summercake\/weather",
+    "description": "A php weather SDK",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "summercake",
+            "email": "summercake@qq.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^6.3",
+        "phpunit/phpunit": "^8.0",
+        "mockery/mockery": "^1.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Summercake\\Weather\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Summercake\\Weather\\ServiceProvider"
+            ]
+        }
+    }
+}
