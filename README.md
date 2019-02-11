@@ -3,7 +3,7 @@
 <p align="center"> A php weather SDK.</p>
 
 [![Build Status](https://travis-ci.org/summercake/weather.svg?branch=master)](https://travis-ci.org/summercake/weather)
-
+![StyleCI build status](https://github.styleci.io/repos/170080033/shield) 
 ## Installing
 
 ```shell
