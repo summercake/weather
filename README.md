@@ -6,7 +6,7 @@
 ## Installing
 
 ```shell
-$ composer require Summercake/weather -vvv
+$ composer require summercake/weather -vvv
 ```
 
 ## Usage
