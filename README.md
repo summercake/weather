@@ -2,6 +2,7 @@
 
 <p align="center"> A php weather SDK.</p>
 
+[![Build Status](https://travis-ci.org/summercake/weather.svg?branch=master)](https://travis-ci.org/summercake/weather)
 
 ## Installing
 
@@ -11,7 +12,11 @@ $ composer require summercake/weather -vvv
 
 ## Usage
 
-TODO
+```sh
+// $key is amap.com api key
+$w = new Weather($key);
+$w->getWeather('city');
+```
 
 ## Contributing
 
