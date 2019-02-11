@@ -1,5 +1,14 @@
 <?php
 
+/*
+ * This file is part of the summercake/weather.
+ *
+ * (c) summercake <summercake@qq.com>
+ *
+ * This source file is subject to the MIT license that is bundled
+ * with this source code in the file LICENSE.
+ */
+
 namespace Summercake\Weather;
 
 use GuzzleHttp\Client;
@@ -55,7 +64,7 @@ class Weather
             'extensions' => $type,
         ]);
 
-        try{
+        try {
             // 3. 调用 getHttpClient 获取实例，并调用该实例的 `get` 方法，
             // 传递参数为两个：$url、['query' => $query]，
             $response = $this->getHttpClient()->get($url, [
@@ -82,4 +91,3 @@ class Weather
         return $this->getWeather($city, 'all', $format);
     }
 }
-
